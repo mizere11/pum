@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>People's University of Malawi</title>
+    <style>
+        /* Add some CSS for a clean, modern design */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        /* Change the text color to black */
+        body,header,main,section {
+            color: black;
+        }
+
+        /* Increase font size of sections and make it bold*/
+        section h2{
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        /* Add unique background color */
+        header {
+            background-color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /*  make the sections header font larger and more attractive */
+        nav a{
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: underline;
+            padding: 10px;
+        }
+
+        /* Add styles for the sections */
+        section {
+            padding: 20px;
+            display: none;
+        }
+        /* Make the first section visible */
+        #home {
+            display: block;
+        }
+        /* Make the website mobile-friendly */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>People's University of Malawi</h1>
+        <div id="logo">
+            <img src="C:\Users\Pro Revolutions\Pictures\Saved Pictures\university.png" width="200" height="100" alt="University Logo">
+        </div>
+    </header>
+    <nav>
+        <a href="#home" onclick="showSection('home')">Home</a>
+        <a href="#academics" onclick="showSection('academics')">Academics</a>
+        <a href="#admissions" onclick="showSection('admissions')">Admissions</a>
+        <a href="#campus-life" onclick="showSection('campus-life')">Campus Life</a>
+        <a href="#research" onclick="showSection('research')">Research</a>
+    </nav>
+    <main>
+        <section id="home">
+ <h2 style="text-align: justify;">The Free University in Malawi</h2>
+<p style="margin-top: 20px;padding-left:10px; text-align: justify; line-height: 2.0;">We believe education is a right. That's why we're developing a project to make it more affordable and accessible for everyone.</p>
+<p style="text-align: justify; line-height: 2.0;">Our project aims to provide high-quality education to students from all backgrounds. We'll be using scholarships, grants, flexible payment plans, and partnerships to achieve this.</p>
+<p style="text-align: justify; line-height: 2.0;">We need partners, donors, and supporters to make this happen. If you're passionate about education and want to make a difference, please <strong> contact us</strong>.</p>
+<p style="text-align: justify; line-height: 2.0;">Together, we can break down barriers and give students the opportunity to succeed. <strong>Contact Mr. Chipiliro Mizere on WhatsApp at 0996982449 or via email at chipiliromizere@icloud.com</strong> to join us.</p>
+           
+ <img src="C:\Users\Pro Revolutions\Pictures\New folder\campus.jpeg" width="500" height="300" alt="Our Campus">
+        </section>
+        <section id="academics">
+            <h2>Academics</h2>
+            <p>The University will be offering a variety of faculties and majors, including Business, Education, Engineering, Law, Medicine, and more. Browse our program offerings tofind the one that's right for you.</p>
+<h3>Faculties</h3>
+<ul>
+<li>Business</li>
+<li>Education</li>
+<li>Engineering</li>
+<li>Law</li>
+<li>Medicine</li>
+</ul>
+</section>
+<section id="admissions">
+<h2>Admissions</h2>
+<p>Applying to People's University of Malawi is easy. Learn more about our application process, including deadlines, required documents, and how to apply.</p>
+<h3>Financial Aid and Scholarships</h3>
+<p>We offer a variety of financial aid and scholarship options to help make your education more affordable. Contact our admissions office for more information and to learn more about the options available to you.</p>
+<h3>Contact Information</h3>
+<p>Admissions Office:</p>
+<ul>
+<li>Email: admissions@pum.edu.mw</li>
+<li>Phone: +265 996982449</li>
+<li>Address:Lilongwe, Malawi</li>
+</ul>
+</section>
+<section id="campus-life">
+<h2>Campus Life</h2>
+<p>At People's University of Malawi, there is always something happening on campus. From student clubs and organizations to cultural events, there are plenty of ways to get involved and make the most of your college experience.</p>
+<img src="C:\Users\Pro Revolutions\Pictures\New folder\univeristy2.jpg" width="600" height="300" alt="Our Students">
+</section>
+<section id="research">
+<h2>Research</h2>
+<p>We are committed to fostering a culture of research excellence. We support and encourage students, faculty, and staff to engage in cutting-edge research across a wide range of disciplines. Explore our research centers and discover the opportunities available to you.</p>
+</section>
+</main>
+<script>
+function showSection(id) {
+// hide all sections
+var sections = document.getElementsByTagName("section");
+for (var i = 0; i < sections.length; i++) {
+sections[i].style.display = "none";
+}
+// show the selected section
+document.getElementById(id).style.display = "block";
+}
+</script>
+
+</body>
+</html>
